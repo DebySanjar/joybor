@@ -54,6 +54,13 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     kapt("com.github.bumptech.glide:compiler:4.16.0")
 
+    //shimmer effect
+    implementation(libs.shimmer)
+
+    //SwipeRefreshLayout
+    implementation(libs.androidx.swiperefreshlayout)
+
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
