@@ -12,6 +12,7 @@ import com.mrs.joybor.R
 import com.mrs.joybor.databinding.ActivitySplashBinding
 
 
+@Suppress("DEPRECATION")
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashBinding
@@ -26,11 +27,11 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         handler.postDelayed({
-
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_r, R.anim.slid_l)
             finish()
-        }, 2000)
+        }, 1100)
     }
 
 }
